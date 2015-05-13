@@ -1,13 +1,19 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
-  description: MyText
-  image_url: MyString
+  title: Title1
+  description: Title 1
+  image_url: Title1.bmp
   price: 9.99
 
 two:
-  title: MyString
-  description: MyText
-  image_url: MyString
-  price: 9.99
+  title: Title2
+  description: Title 2
+  image_url: Title2.bmp
+  price: 11.00
+
+new_row:
+  title: Title3
+  description: Title 3
+  image_url: Title3.bmp
+  price: 13
