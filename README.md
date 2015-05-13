@@ -1,0 +1,2 @@
+# shop
+Rails application example
