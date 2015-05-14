@@ -1,0 +1,47 @@
+rails new shop
+rails generate scaffold Neki --pretend
+rails generate scaffold Product title:string description:text image_url:string price:decimal
+
+# Add precision and scale to DDD_create_products.rb
+rake db:migrate
+rake db:migrate RAILS_ENV=test
+rake test
+
+# Populate products table with seeds
+rake db:seed
+
+# Added sass/css to 
+
+# Git
+git init
+git add .
+git commit -m "Scaffolding creted"
+git remote add origin git@github.com:dkrompic/shop.git
+git remote set-url origin https://github.com/dkrompic/shop.git
+git remote -v
+git pull origin master
+git status
+git add .gitignore
+git push origin master
+git config --global credential.helper wincred
+git config --global --list
+
+# Validation added to product.rb
+rake test
+
+# Test updated in product_controller_test.rb
+
+# Unit test models - tests added to product_test.rb
+rake --tasks
+rake test:models
+
+# Test fixtures - products.yml 
+
+# Creating new controller
+rails generate controller Store index
+
+# Set root, fill in controller, view, css
+
+# Added functional tests to store_controller_test.rb
+
+# Caching added tp configuratio (performing_caching) and index.html.erb
