@@ -41,7 +41,15 @@ rake test:models
 rails generate controller Store index
 
 # Set root, fill in controller, view, css
-
 # Added functional tests to store_controller_test.rb
-
 # Caching added tp configuratio (performing_caching) and index.html.erb
+
+# Adding cart 
+rails generate scaffold Cart
+rake db:migrate
+rails generate scaffold LineItem product:references cart:belongs_to
+rake db:migrate
+# has_many relations added to Cart and Product, and before_destroy hook
+# Adding a button to store/index.html.erb
+# Including CurrentCart concern to line_items_controller.rb and update of create action
+# Carts show action updated
