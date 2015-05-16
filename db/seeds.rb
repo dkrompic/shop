@@ -23,7 +23,7 @@ Product.create!(title: 'First Product',
     %{
         Added manually, then added to seeds.
       },
-  image_url:   'N/A',    
+  image_url:   'NotAvailable.bmp',
   price: 1.00)
 
 Product.create!(title: 'CoffeeScript',
@@ -31,7 +31,7 @@ Product.create!(title: 'CoffeeScript',
     %{
         CoffeeScript is JavaScript done right. 
       },
-  image_url:   'cs.jpg',    
+  image_url:   'cs.gif',
   price: 36.00)
 
 # . . .
@@ -41,7 +41,7 @@ Product.create!(title: 'Programming Ruby 1.9 & 2.0',
         Ruby is the fastest growing and most exciting dynamic language
         out there. 
       },
-  image_url: 'ruby.jpg',
+  image_url: 'ruby.gif',
   price: 49.95)
 # . . .
 
@@ -53,5 +53,5 @@ Product.create!(title: 'Rails Test Prescriptions',
         theoretical perspective (why to test) and from a practical perspective
         (how to test effectively). 
       },
-  image_url: 'rtp.jpg',
+  image_url: 'rtp.gif',
   price: 34.95)

@@ -53,3 +53,6 @@ rake db:migrate
 # Adding a button to store/index.html.erb
 # Including CurrentCart concern to line_items_controller.rb and update of create action
 # Carts show action updated
+
+# CI did not work as bundler was not up to date ?! It was "1.10.0.pre", and now it is "1.10.0.pre.2"
+gem update bundler
