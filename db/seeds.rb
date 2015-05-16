@@ -23,7 +23,7 @@ Product.create!(title: 'First Product',
     %{
         Added manually, then added to seeds.
       },
-  image_url:   'NotAvailable.bmp',
+  image_url:   'NoPicture.bmp',
   price: 1.00)
 
 Product.create!(title: 'CoffeeScript',
