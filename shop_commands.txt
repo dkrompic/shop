@@ -60,4 +60,4 @@ gem update bundler
 # Upgrading cart 
 # Adding quantity, custom migrations (up/down), 
 # Handling errors - rescue_from added to carts_controller.rb, using logger, removing cart_id from params
-# Empty cart button added
+# Empty cart button added, plus Remove item buttons
