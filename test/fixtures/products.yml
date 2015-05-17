@@ -17,3 +17,16 @@ new_row:
   description: Title 3
   image_url: Title3.bmp
   price: 13
+  
+unit_test_1:
+  title: Title_ut1
+  description: Title 3
+  image_url: Title3.bmp
+  price: 13
+  
+unit_test_2:
+  title: Title_ut2
+  description: Title 3
+  image_url: Title3.bmp
+  price: 13
+  

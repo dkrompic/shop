@@ -42,7 +42,7 @@ rails generate controller Store index
 
 # Set root, fill in controller, view, css
 # Added functional tests to store_controller_test.rb
-# Caching added tp configuratio (performing_caching) and index.html.erb
+# Caching added to configuration (performing_caching) and index.html.erb
 
 # Adding cart 
 rails generate scaffold Cart
@@ -56,3 +56,8 @@ rake db:migrate
 
 # CI did not work as bundler was not up to date ?! It was "1.10.0.pre", and now it is "1.10.0.pre.2"
 gem update bundler
+
+# Upgrading cart 
+# Adding quantity, custom migrations (up/down), 
+# Handling errors - rescue_from added to carts_controller.rb, using logger, removing cart_id from params
+# Empty cart button added
