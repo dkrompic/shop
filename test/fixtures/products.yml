@@ -30,3 +30,9 @@ unit_test_2:
   image_url: Title3.bmp
   price: 13
   
+intg_test:
+  title: Integration testing
+  description: About integration testing
+  image_url: IT.bmp
+  price: 13.13
+  

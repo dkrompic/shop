@@ -61,3 +61,6 @@ gem update bundler
 # Adding quantity, custom migrations (up/down), 
 # Handling errors - rescue_from added to carts_controller.rb, using logger, removing cart_id from params
 # Empty cart button added, plus Remove item buttons
+
+# Sending email chapter - integration testing
+rails generate integration_test user_stories
