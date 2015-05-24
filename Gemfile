@@ -42,10 +42,14 @@ group :development, :test do
   
   gem 'rspec-rails'
   gem 'factory_girl_rails'
+  gem 'gherkin', platforms: :ruby
 end
 
 group :test do
   gem 'shoulda-matchers'
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
+  gem 'selenium-webdriver'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
