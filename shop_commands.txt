@@ -61,6 +61,30 @@ gem update bundler
 # Adding quantity, custom migrations (up/down), 
 # Handling errors - rescue_from added to carts_controller.rb, using logger, removing cart_id from params
 # Empty cart button added, plus Remove item buttons
+rails generate migration add_quantity_to_line_items quantity:integer
+rake db:migrate
+rails generate migration combine_items_in_cart
+
+# Additional commands
+rake db:roleback
+rake db:migrate:status
+
+# Add a dash of ajax
+# Partial templates, "remote" attr for button, formatjs, js.erb added
+# JQuery gem added to gemfile, require line to application.js
+
+# Check out
+rails generate scaffold Order name adress:text email pay_type
+rails generate migration add_order_to_line_item order:references
+rake db:migrate
 
 # Sending email chapter - integration testing
 rails generate integration_test user_stories
+
+# Logging in
+rails generate scaffold User name:string password:digest
+rake db:migrate
+
+rails generate controller Sessions new create destroy
+rails generate controller Admin index
+rails console
